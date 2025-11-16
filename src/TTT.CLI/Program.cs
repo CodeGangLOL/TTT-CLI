@@ -10,8 +10,9 @@ namespace TicTacToeCLI
 
     class Program
     {
-        static char[] board;
-        static char currentPlayer;
+        // Initialize fields to satisfy nullable / definite assignment checks
+        static char[] board = new char[9];
+        static char currentPlayer = 'X';
         static GameMode gameMode;
 
         static void Main(string[] args)
